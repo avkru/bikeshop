@@ -10,6 +10,46 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   </head>
   <body>
-    
+    <header class="header">
+      <nav class="header__nav">
+        <a  class="header__logo" href="#"><img src="img/logo.png" alt="Logo"></a>
+        <ul class="header__menu">
+          <li><a href="#">BICYCLES</a>
+            <ul class="header__submenu">
+              <li><a href="#">FIXED / SINGLE SPEED</a></li>
+              <li><a href="#">CITY BIKES</a></li>
+              <li><a href="#">PREMIUM SERIES</a></li>
+            </ul>
+          </li>
+          <li><a href="#">PARTS</a></li>
+          <li><a href="#">ACCESSORIES</a></li>
+          <li><a href="#">EXTRAS</a></li>
+          <li><a class="basket-icon" href="#"></a></li>
+        </ul>
+      </nav>
+
+      <div class="header__box">
+        <h1 class="header__title">HANDMADE BICYCLE</h1>
+        <p class="header__slogan">You <span>create</span> the <span>journey,</span> we supply the <span>parts.</span></p>
+        <button class="btn">SHOP BIKES</button>
+        <a  class="scroll-icon" href="#"></a>
+      </div>
+      
+      <div id="slider" class="slider">
+        <a class="arrow prev"></a>
+        <div class="gallery">
+          <ul class="images">
+            <li><img src="img/slider_photo.png"></li>
+            <li><img src="img/slider_photo.png"></li>
+            <li><img src="img/slider_photo.png"></li>
+            <li><img src="img/slider_photo.png"></li>
+            <li><img src="img/slider_photo.png"></li>
+          </ul>
+        </div>
+        <a class="arrow next"></a>
+      </div>
+    </header>
+
+    <script src="js/slider.js"></script>
   </body>
 </html>

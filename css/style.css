@@ -1,2 +1,247 @@
 @charset "utf-8";
 
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: Roboto, sans-serif;
+}
+
+/* Header */
+
+.header {
+  position: relative;
+
+  border-bottom: 2px solid #c1bfbe;
+}
+
+.header__nav {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1100px;
+  height: 40px;
+  margin: auto;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu li {
+  list-style: none;
+}
+
+.header__menu li a {
+  padding: 13px;
+
+  font-size: 15px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__menu li:last-child {
+  padding-left: 13px;
+}
+
+.header__menu li .basket-icon {
+  width: 26px;
+  height: 26px;
+  
+  background: url(../img/basket_icon.png) center no-repeat;
+}
+
+.header__menu li:not(:last-child) a:hover {
+  color: #545508;
+
+  background-color: #fcff19;
+  border-radius: 12px;
+}
+
+.header__menu li:first-child a:hover {
+  border-radius: 12px 12px 12px 0;
+}
+
+.header__menu li:first-child {
+  position: relative;
+}
+
+.header__submenu {
+  position: absolute;
+  top: 27px;
+  left: 0;
+
+  display: none;
+  padding: 15px 13px;
+
+  background-color: #fcff19;
+  border-radius: 12px;
+}
+
+.header__submenu li {
+  width: 175px;
+}
+
+.header__submenu li a {
+  padding: 0;
+
+  color: #545508;
+}
+
+.header__submenu li:last-child {
+  padding-top: 4px;
+}
+
+.header__menu li:first-child:hover .header__submenu {
+  display: block;
+}
+
+.header__menu li span {
+  display: none;
+}
+
+/* Header title */
+
+.header__box {
+  position: absolute;
+  top: 407px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  text-align: center;
+}
+
+.header__title {
+  font-size: 50px;
+}
+
+.header__slogan {
+  font-size: 28px;
+}
+
+.header__title,
+.header__slogan {
+  margin-bottom: 33px;
+
+  line-height: 32px;
+  font-weight: 700;
+
+  color: #fff;
+}
+
+.header__slogan span {
+  color: #fcff19;
+}
+
+.header__box .btn {
+  display: inline;
+  margin-bottom: 297px;
+  padding: 15px 28px;
+
+  font-size: 12px;
+  line-height: 32px;
+  font-weight: 700;
+
+  color: #fcff19;
+
+  background-color: #000;
+  border-radius: 12px;
+
+  cursor: pointer;
+}
+
+.header__box .btn:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+
+  transition: background-color 0.5s;
+}
+
+.header__box .scroll-icon {
+  display: block;
+  width: 66px;
+  height: 77px;
+
+  margin: auto;
+
+  background: url(../img/scroll_icon.png) no-repeat;
+}
+
+/* Slider styles */
+
+.slider {
+  position: relative;
+}
+
+.slider img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery {
+  overflow: hidden;
+}
+
+.gallery ul {
+  height: 980px;
+  width: 9999px;
+  
+  list-style: none;
+
+  transition: margin-left 500ms;
+
+  font-size: 0; /* remove white-space between inline-block's li */
+}
+
+.gallery li {
+  display: inline-block;
+}
+
+.arrow {
+  position: absolute;
+  top: 461px;
+  z-index: 1;
+
+  display: block;
+  width: 58px;
+  height: 58px;
+  padding: 0;
+}
+
+.prev {
+  left: 23px;
+
+  background: url(../img/left_button.png);
+}
+
+.next {
+  right: 23px;
+
+  background: url(../img/right_button.png);
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.prev:hover {
+  background: url(../img/left_button_hover.png);
+}
+
+.next:hover {
+  background: url(../img/right_button_hover.png);
+}
+
+.arrow:focus {
+  outline: none;
+}

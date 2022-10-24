@@ -232,6 +232,8 @@
 
 .arrow:hover {
   cursor: pointer;
+
+  transition: 1s;
 }
 
 .prev:hover {
@@ -254,7 +256,7 @@
 
   text-align: center;
 
-  background: url(../img/categories_bg.png) center / cover;
+  background: url(../img/categories_bg.jpg) center / cover;
 }
 
 .categories h2 {
@@ -288,16 +290,16 @@
 }
 
 .item:first-child {
-  background: url(../img/categories_1.png) no-repeat center;
+  background: url(../img/categories_1.jpg) no-repeat center;
 }
 
 .item:nth-child(2) {
-  background: url(../img/categories_2.png) no-repeat center;
+  background: url(../img/categories_2.jpg) no-repeat center;
 
 }
 
 .item:last-child {
-  background: url(../img/categories_3.png) no-repeat center;
+  background: url(../img/categories_3.jpg) no-repeat center;
 }
 
 .item h3 {
@@ -337,17 +339,17 @@
 
 .item:hover:first-child {
   background: url(../img/hover_filter.png) top left no-repeat,
-              url(../img/categories_1.png) no-repeat center;
+              url(../img/categories_1.jpg) no-repeat center;
 }
 
 .item:hover:nth-child(2) {
   background: url(../img/hover_filter.png) top left no-repeat,
-              url(../img/categories_2.png) no-repeat center;
+              url(../img/categories_2.jpg) no-repeat center;
 }
 
 .item:hover:last-child {
   background: url(../img/hover_filter.png) top left no-repeat,
-              url(../img/categories_3.png) no-repeat center;
+              url(../img/categories_3.jpg) no-repeat center;
 }
 
 .item:hover {

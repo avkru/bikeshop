@@ -245,3 +245,120 @@
 .arrow:focus {
   outline: none;
 }
+
+/* Categories */
+
+.categories {
+  height: 478px; /* 628px - padding * 2 */
+  padding: 75px;
+
+  text-align: center;
+
+  background: url(../img/categories_bg.png) center / cover;
+}
+
+.categories h2 {
+  margin-bottom: 75px;
+
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.categories__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 346px;
+  height: 253px; /* 288px - padding-top */
+  margin-right: 29px;
+  padding-bottom: 35px;
+
+  background-color: bisque;
+}
+
+.item:last-child {
+  margin-right: 0;
+}
+
+.item:first-child {
+  background: url(../img/categories_1.png) no-repeat center;
+}
+
+.item:nth-child(2) {
+  background: url(../img/categories_2.png) no-repeat center;
+
+}
+
+.item:last-child {
+  background: url(../img/categories_3.png) no-repeat center;
+}
+
+.item h3 {
+  margin-bottom: 10px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  color: #dbdd2c;
+}
+
+.item p {
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  font-weight: 400;
+
+  color: #fff;
+}
+
+.item button {
+  align-self: center;
+  padding: 15px 22px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  color: #fff;
+
+  background: transparent;
+  border: 3px solid #fff;
+  border-radius: 7px;
+
+  cursor: pointer;
+  opacity: 0;
+}
+
+.item:hover:first-child {
+  background: url(../img/hover_filter.png) top left no-repeat,
+              url(../img/categories_1.png) no-repeat center;
+}
+
+.item:hover:nth-child(2) {
+  background: url(../img/hover_filter.png) top left no-repeat,
+              url(../img/categories_2.png) no-repeat center;
+}
+
+.item:hover:last-child {
+  background: url(../img/hover_filter.png) top left no-repeat,
+              url(../img/categories_3.png) no-repeat center;
+}
+
+.item:hover {
+  transition: all 1.5s ease-in-out;
+}
+
+.item:hover button {
+ opacity: 1;
+
+ transition: opacity 1.5s ease-in-out;
+}
+
+/* Galery */
+

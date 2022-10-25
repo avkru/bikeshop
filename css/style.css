@@ -5,6 +5,8 @@
   padding: 0;
 
   font-family: Roboto, sans-serif;
+
+  scroll-behavior: smooth;
 }
 
 /* Header */
@@ -362,5 +364,93 @@
  transition: opacity 1.5s ease-in-out;
 }
 
-/* Galery */
+/* Gallery-bikes */
+
+.gallery-bikes {
+  padding: 75px 23px 34px;
+
+  text-align: center;
+
+  background-color: #fff;
+}
+
+.gallery-bikes h2 {
+  margin-bottom: 55px;
+
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.gallery-bikes__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-bikes__item img {
+  width: 490px;
+  height: 391px;
+}
+
+.gallery-bikes__price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-bikes__price p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #1a1a1a;
+  text-align: left;
+}
+
+.gallery-bikes__price p span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.gallery-bikes__inner-wrapper select {
+  margin-right: 10px;
+  padding: 16px 79px 16px 18px;
+
+  font-size: 12px;
+  font-weight: 700;
+  color: #424242;
+
+  border: 1px solid #dadada;
+  border-radius: 10px;
+  background-image: url(../img/select_chevron.jpg);
+  background-repeat: no-repeat;
+  background-position: right 16px top 50%;
+  outline: none;
+
+  appearance: none;
+  cursor: pointer;
+}
+
+.gallery-bikes__inner-wrapper .submit {
+  padding: 16px 35px;
+
+  font-size: 12px;
+  font-weight: 700;
+  color:#fff;
+
+  background-color: #b7b7b7;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+
+  cursor: pointer;
+}
+
+.gallery-bikes__inner-wrapper .submit:hover,
+.gallery-bikes__item:nth-child(2) .submit {
+  color: #dbdd2c;
+  
+  background-color: #000;
+  
+  transition: all 1.5s;
+}
+
+/* Contact */
 

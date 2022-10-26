@@ -102,7 +102,7 @@ html {
 }
 
 .header__submenu li:last-child {
-  padding-top: 4px;
+  padding-left: 0;
 }
 
 .header__menu li:first-child:hover .header__submenu {

@@ -5,7 +5,9 @@
   padding: 0;
 
   font-family: Roboto, sans-serif;
+}
 
+html {
   scroll-behavior: smooth;
 }
 
@@ -66,11 +68,11 @@
   color: #545508;
 
   background-color: #fcff19;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 .header__menu li:first-child a:hover {
-  border-radius: 12px 12px 12px 0;
+  border-radius: 10px 10px 10px 0;
 }
 
 .header__menu li:first-child {
@@ -86,7 +88,7 @@
   padding: 15px 13px;
 
   background-color: #fcff19;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 .header__submenu li {
@@ -454,3 +456,123 @@
 
 /* Contact */
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 484px; /* 634px - (padding-top + padding-bottom) */
+  padding: 67px 81px 83px;
+
+  background: url(../img/contact_bg.jpg) no-repeat center;
+}
+
+.contact h2 {
+  margin-bottom: 58px;
+
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contact p {
+  margin-bottom: 50px;
+
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.contact__form {
+  display: grid;
+  grid-template-columns: 213px 213px;
+  grid-template-rows: 43px 43px 153px;
+  gap: 20px;
+}
+
+input, textarea {
+  padding: 16px 23px 16px;
+
+  border: 1px solid #b5b5b5;
+  border-radius: 10px;
+}
+
+textarea {
+  resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 12px;
+  font-weight: 400;
+  font-style: italic;
+  color: #b5b5b5;
+  text-transform: uppercase;
+}
+
+input[type="submit"] {
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+
+  background-color: #b7b7b7;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  color: #dbdd2c;
+  
+  background-color: #000;
+  
+  transition: all 1.5s;
+}
+
+input[type="email"],
+input[type="submit"],
+textarea {
+  grid-column: span 2;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 605px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+
+  background-color: #fcff19;
+}
+
+.footer__menu {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+
+  list-style: none;
+}
+
+.footer__menu li a {
+  padding: 13px;
+  
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a03;
+  text-decoration: none;
+}
+
+.footer__menu li span {
+  display: none;
+}
+
+.footer__menu li:hover a {
+  color: #dbdd2c;
+
+  background-color: #000;
+  border-radius: 10px;
+
+  transition: background-color 0.8s;
+}
